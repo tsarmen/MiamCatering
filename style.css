@@ -81,7 +81,7 @@ a:hover {
 .front__nav {
 	margin-left: 216px;
 	margin-right: 216px; 
-	padding: 165px 84px 165px;
+	padding: 120px 84px 120px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -91,14 +91,13 @@ a:hover {
 	position: relative;
 	display: flex;
 	width: 194px;
-	height: 210px;
+	/*height: 194px;*/
 	font-size: 28px;
 	color: white;
 	background-repeat: no-repeat;
 	align-items: center;
 	justify-content: center;
-	transition: all 0.2s ease-in-out;
-
+/*	transition: all 0.2s ease-in-out;*/
 }
 
 /*.front__nav a:hover {
@@ -109,31 +108,38 @@ a:hover {
 
 .link-1 {
 	background-image: url("firma.png");
-	background-position: top;
+	background-position: 0px 45px;
+	height: 300px;
+	clip-path: polygon(50% 8%, 78% 14%, 100% 29%, 100% 65%, 78% 88%, 24% 88%, 0 67%, 0 26%, 25% 0);
 }
 
 .link-2 {
 	background-image: url("pulm.png");
-	background-position: 5px -20px;
-
+	background-position: 10px 25px;
+	height: 300px;
+	clip-path: polygon(50% 0%, 85% 9%, 100% 29%, 100% 58%, 71% 84%, 33% 84%, 0 63%, 0 26%, 9% 0);
 }
 
 .link-3 {
 	background-image: url("sunna.png");
-	background-position: top;
+	background-position: 0px 40px;
+	height: 300px;
+	clip-path: polygon(50% 8%, 78% 14%, 100% 29%, 100% 65%, 78% 88%, 24% 88%, 0 67%, 0 26%, 0 8%);
 }
 
 .link-4 {
 	background-image: url("kodukokk.png");
-	background-position: top;
+	background-position: 0px 50px;
+	height: 300px;
+	clip-path: polygon(50% 8%, 78% 14%, 100% 29%, 100% 65%, 78% 88%, 24% 88%, 0 67%, 0 26%, 25% 0);
+}
 }
 
-/*.footer {
+.footer {
 	justify-content: center;
 	position: relative;
-
     font-size: 14px;
-}*/
+}
 
 .main-footer {
 	position: relative;
@@ -175,17 +181,17 @@ a:hover {
 
 .main-footer > ul {
 	overflow: auto;
-    /*list-style-type: none;
-    display: flex;*/
+    list-style-type: none;
+    display: flex;
 }
 .main-footer > ul > li {
 	list-style-type: none;
 	float: left;
 }
-.main-footer > ul > li > a{
+/*.main-footer > ul > li > a{
 	width: 24px;
 	height: 24px;
-}
+}*/
 
 .fb {
 	width: 24px;
@@ -194,11 +200,13 @@ a:hover {
 	background-repeat: no-repeat;
 	background-image: url("icon__facebook.png");
 	margin-right: 40px;
-	outline: none;
 
 }
 
 .insta {
+	width: 24px;
+	height: 24px;
+	position: relative;
 	background-repeat: no-repeat;
 	background-image: url("icon__facebook.png");
 }
