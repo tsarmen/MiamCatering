@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*
+font-family: 'Nunito', sans-serif;
+*/
+
+body {
+	font-size: 20px;
+	line-height: 1.47em;
+	font-family: 'Nunito', sans-serif;
+}
+h1, h2, h3, h4 {
+	font-family: 'Nunito', sans-serif;
+	color: #343333;
+}
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3	{
+	font-size: 26px;
+}
+
+a {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.front {
+	position: relative;
+	width: 1920px;
+    height: 540px;
+	background-image: url("main.jpg");
+}
+
+.main-header {
+	display: flex;
+	justify-content: center;
+}
+
+.main-header__logo {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: url("LOGO1.png");
+	background-repeat: no-repeat;
+	width: 1000px;
+	height: 500px;
+	background-position: center;
+
+}
+
+.main-content {
+	display: flex;
+	justify-content: center;
+}
+
+.front h1{
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+    border: 0;
+}
+
+.front__nav {
+	margin-left: 216px;
+	margin-right: 216px; 
+	padding: 165px 84px 165px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.front__nav a{
+	font-weight: normal;
+	position: relative;
+	display: flex;
+	width: 194px;
+	height: 210px;
+	font-size: 28px;
+	color: white;
+	background-repeat: no-repeat;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s ease-in-out;
+
+}
+
+/*.front__nav a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    text-shadow: black;
+} */
+
+.link-1 {
+	background-image: url("firma.png");
+	background-position: top;
+}
+
+.link-2 {
+	background-image: url("pulm.png");
+	background-position: 5px -20px;
+
+}
+
+.link-3 {
+	background-image: url("sunna.png");
+	background-position: top;
+}
+
+.link-4 {
+	background-image: url("kodukokk.png");
+	background-position: top;
+}
+
+/*.footer {
+	justify-content: center;
+	position: relative;
+
+    font-size: 14px;
+}*/
+
+.main-footer {
+	position: relative;
+	left:50%;
+	margin-left: -960px;
+	width: 1920px;
+    height: 120px;
+    padding-left: 300px;
+	padding-right: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+}
+
+
+/*.main-footer {
+    position:sticky;
+    bottom:0;
+    left:50%;
+    margin-left:-200px;
+    background:red;
+    width:400px;
+    height:100px;
+}*/
+
+.main-footer__logo {
+	background-image: url("LOGO2.png");
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 80px;
+}
+
+.main-footer p {
+	font-weight: normal;
+	position: relative;
+	display: block;
+	font-size: 14px;
+}
+
+.main-footer > ul {
+	overflow: auto;
+    /*list-style-type: none;
+    display: flex;*/
+}
+.main-footer > ul > li {
+	list-style-type: none;
+	float: left;
+}
+.main-footer > ul > li > a{
+	width: 24px;
+	height: 24px;
+}
+
+.fb {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-image: url("icon__facebook.png");
+	margin-right: 40px;
+	outline: none;
+
+}
+
+.insta {
+	background-repeat: no-repeat;
+	background-image: url("icon__facebook.png");
+}
+
+
+
