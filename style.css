@@ -42,7 +42,7 @@ a:hover {
 	position: relative;
 	width: 1920px;
     height: 540px;
-	background-image: url("main.jpg");
+	background-image: url("images/main.jpg");
 }
 
 .main-header {
@@ -53,7 +53,7 @@ a:hover {
 .main-header__logo {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	background-image: url("LOGO1.png");
+	background-image: url("images/LOGO1.png");
 	background-repeat: no-repeat;
 	width: 1000px;
 	height: 500px;
@@ -80,7 +80,7 @@ a:hover {
 
 .front__nav {
 	margin-left: 216px;
-	margin-right: 216px; 
+	margin-right: 216px;
 	padding: 120px 84px 120px;
 	display: flex;
 	justify-content: space-between;
@@ -107,109 +107,30 @@ a:hover {
 } */
 
 .link-1 {
-	background-image: url("firma.png");
+	background-image: url("images/firma.png");
 	background-position: 0px 45px;
 	height: 300px;
 	clip-path: polygon(50% 8%, 78% 14%, 100% 29%, 100% 65%, 78% 88%, 24% 88%, 0 67%, 0 26%, 25% 0);
 }
 
 .link-2 {
-	background-image: url("pulm.png");
+	background-image: url("images/pulm.png");
 	background-position: 10px 25px;
 	height: 300px;
 	clip-path: polygon(50% 0%, 85% 9%, 100% 29%, 100% 58%, 71% 84%, 33% 84%, 0 63%, 0 26%, 9% 0);
 }
 
 .link-3 {
-	background-image: url("sunna.png");
+	background-image: url("images/sunna.png");
 	background-position: 0px 40px;
 	height: 300px;
 	clip-path: polygon(50% 8%, 78% 14%, 100% 29%, 100% 65%, 78% 88%, 24% 88%, 0 67%, 0 26%, 0 8%);
 }
 
 .link-4 {
-	background-image: url("kodukokk.png");
+	background-image: url("images/kodukokk.png");
 	background-position: 0px 50px;
 	height: 300px;
 	clip-path: polygon(50% 8%, 78% 14%, 100% 29%, 100% 65%, 78% 88%, 24% 88%, 0 67%, 0 26%, 25% 0);
 }
 }
-
-.footer {
-	justify-content: center;
-	position: relative;
-    font-size: 14px;
-}
-
-.main-footer {
-	position: relative;
-	left:50%;
-	margin-left: -960px;
-	width: 1920px;
-    height: 120px;
-    padding-left: 300px;
-	padding-right: 300px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center; 
-}
-
-
-/*.main-footer {
-    position:sticky;
-    bottom:0;
-    left:50%;
-    margin-left:-200px;
-    background:red;
-    width:400px;
-    height:100px;
-}*/
-
-.main-footer__logo {
-	background-image: url("LOGO2.png");
-	background-repeat: no-repeat;
-	width: 160px;
-	height: 80px;
-}
-
-.main-footer p {
-	font-weight: normal;
-	position: relative;
-	display: block;
-	font-size: 14px;
-}
-
-.main-footer > ul {
-	overflow: auto;
-    list-style-type: none;
-    display: flex;
-}
-.main-footer > ul > li {
-	list-style-type: none;
-	float: left;
-}
-/*.main-footer > ul > li > a{
-	width: 24px;
-	height: 24px;
-}*/
-
-.fb {
-	width: 24px;
-	height: 24px;
-	position: relative;
-	background-repeat: no-repeat;
-	background-image: url("icon__facebook.png");
-	margin-right: 40px;
-
-}
-
-.insta {
-	width: 24px;
-	height: 24px;
-	position: relative;
-	background-repeat: no-repeat;
-	background-image: url("icon__facebook.png");
-}
-
-
-

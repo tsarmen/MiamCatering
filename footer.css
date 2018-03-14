@@ -1,0 +1,70 @@
+/*.footer {
+	justify-content: center;
+	position: relative;
+
+    font-size: 14px;
+}*/
+
+.main-footer {
+	position: relative;
+	left:50%;
+	margin-left: -960px;
+	width: 1920px;
+    height: 120px;
+    padding-left: 300px;
+	padding-right: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/*.main-footer {
+    position:sticky;
+    bottom:0;
+    left:50%;
+    margin-left:-200px;
+    background:red;
+    width:400px;
+    height:100px;
+}*/
+
+.main-footer__logo {
+	background-image: url("images/LOGO2.png");
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 80px;
+}
+
+.main-footer p {
+	font-weight: normal;
+	position: relative;
+	display: block;
+	font-size: 14px;
+}
+
+.main-footer > ul {
+	list-style-type: none;
+}
+.main-footer > ul > li {
+	display: inline-block;
+}
+.main-footer > ul > li > a{
+	width: 24px;
+	height: 24px;
+  font-size: 0px;
+	display: block;
+  text-align: center;
+  text-decoration: none;
+	margin-left: 20px;
+}
+
+.fb {
+	background-repeat: no-repeat;
+	background-image: url("images/facebook-icon.png");
+}
+
+.insta {
+	background-repeat: no-repeat;
+	background-image: url("images/Instagram-icon.png");
+}
