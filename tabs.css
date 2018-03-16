@@ -37,14 +37,14 @@ body {font-family: Arial;}
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    margin: 0px 200px 0px 200px;
+    margin: 0px 20% 0px 35%;
 }
 
 .retsepttekst{
   float: left;
-  width: 50%;
+  width: 40%;
 }
 
 .retseptpilt{
-  margin-left: 50%;
+  margin-left:20%;
 }

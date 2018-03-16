@@ -1,36 +1,51 @@
-document.getElementById("pk1").style.display = "block";
-var activeTab = 1;
-document.getElementsByClassName("tablinks")[0].click();
+document.getElementsByClassName("tabcontent firma")[0].click();
+document.getElementsByClassName("tablinks firma")[0].click();
+document.getElementsByClassName("tabcontent synna")[0].click();
+document.getElementsByClassName("tablinks synna")[0].click();
+arrayOfActiveTabs = [0,0];
 
-
-function uusFirma(evt, retsept) {
+function uusFirma(evt, retseptNr, tyyp) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
+    activeTab = retseptNr;
+    tabcontent = document.getElementsByClassName("tabcontent " + tyyp);
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tablinks " + tyyp);
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(retsept).style.display = "block";
+    tabcontent[activeTab].style.display = "block";
     evt.currentTarget.className += " active";
-    activeTab = retsept.substring(2);
+
+    if(tyyp == "firma"){
+      arrayOfActiveTabs[0]=activeTab;
+    }else if (tyyp == "synna") {
+      arrayOfActiveTabs[1]=activeTab;
+    }
 }
 
-function nextFirma(evt){
-    tablinks = document.getElementsByClassName("tablinks");
-    if(parseInt(activeTab) + 1 <= tablinks.length){
-      activeTab = parseInt(activeTab) + 1;
+function nextFirma(evt, tyyp){
+    var i, tabcontent, tablinks;
+
+    if(tyyp == "firma"){
+      activeTab = arrayOfActiveTabs[0];
+    }else if (tyyp == "synna") {
+      activeTab = arrayOfActiveTabs[1];
     }
 
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tablinks = document.getElementsByClassName("tablinks " + tyyp);
+    if(activeTab + 1 < tablinks.length){
+      activeTab = activeTab + 1;
+    }
+
+    tabcontent = document.getElementsByClassName("tabcontent " + tyyp);
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
     for (i = 0; i < tablinks.length; i++) {
-        if(i == parseInt(activeTab)-1){
+        if(i == activeTab){
           if(!tablinks[i].className.includes("active")){
             tablinks[i].className = tablinks[i].className += " active";
           }
@@ -38,23 +53,36 @@ function nextFirma(evt){
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
     }
+    tabcontent[activeTab].style.display = "block";
 
-    document.getElementById("pk" + activeTab).style.display = "block";
+    if(tyyp == "firma"){
+      arrayOfActiveTabs[0]=activeTab;
+    }else if (tyyp == "synna") {
+      arrayOfActiveTabs[1]=activeTab;
+    }
 }
 
-function prevFirma(evt){
-    tablinks = document.getElementsByClassName("tablinks");
-    if(parseInt(activeTab) - 1 >= 1){
-      activeTab = parseInt(activeTab) - 1;
+function prevFirma(evt, tyyp){
+    var i, tabcontent, tablinks;
+
+    if(tyyp == "firma"){
+      activeTab = arrayOfActiveTabs[0];
+    }else if (tyyp == "synna") {
+      activeTab = arrayOfActiveTabs[1];
     }
 
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tablinks = document.getElementsByClassName("tablinks " + tyyp);
+    if(activeTab - 1 >= 0){
+      activeTab = activeTab - 1;
+    }
+
+    tabcontent = document.getElementsByClassName("tabcontent " + tyyp);
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
     for (i = 0; i < tablinks.length; i++) {
-      if(i == parseInt(activeTab) - 1){
+      if(i == activeTab){
         if(!tablinks[i].className.includes("active")){
           tablinks[i].className = tablinks[i].className += " active";
         }
@@ -62,6 +90,12 @@ function prevFirma(evt){
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
     }
+    tabcontent[activeTab].style.display = "block";
 
-    document.getElementById("pk" + activeTab).style.display = "block";
+
+    if(tyyp == "firma"){
+      arrayOfActiveTabs[0]=activeTab;
+    }else if (tyyp == "synna") {
+      arrayOfActiveTabs[1]=activeTab;
+    }
 }
