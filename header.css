@@ -12,22 +12,51 @@
 	margin-bottom: 80px;
 }
 
-.main-header__logo {
-	position: relative;
+/*.main-header__logo {
+	background-image: url("images/LOGO2.png");
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 80px;
+}*/
+
+@media (max-width: 768px) {
+    .main-header {
+    	display: block;
+    }
 }
 
 .main__nav {
 	position: absolute;
 	right: 90px;
-	font-weight: normal;
-	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	font-size: 16px;
 }
 
-.main__nav > a {
+.main__nav > a:link {
+	color: black;
+	text-align: none;
 	display: relative;
 	padding-left: 20px;
 	padding-right: 20px;
 	text-align: center;
+}
+
+
+.main__nav > a:visited {
+	color: black;
+}
+
+.main__nav > a:hover {
+	overflow-x: 10px;
+}
+
+.main__nav > a:active {
+	text-decoration: underline;
+}
+
+.nonactive-nav {
+	text-decoration: none;
 }
 
 .main-header > ul {

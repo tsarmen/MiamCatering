@@ -1,4 +1,5 @@
 
+
 .main-footer {
 	/*position: relative;*/
 	/*left:50%;*/
@@ -7,17 +8,26 @@
     height: 120px;
     /*padding-left: 300px;
 	padding-right: 300px;*/
+	max-width: 1400px;
+    margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.main-footer__logo {
+@media (max-width: 768px) {
+    .main-footer {
+    	display: block;
+    	margin: auto;
+    }
+}
+
+/*.main-footer__logo {
 	background-image: url("images/LOGO2.png");
 	background-repeat: no-repeat;
 	width: 160px;
 	height: 80px;
-}
+}*/
 
 .main-footer p {
 	text-align: center;
@@ -40,8 +50,9 @@
 	margin:0;
 	display: flex;
 }
+
 .main-footer > ul > li {
-	display: inline-block;
+	display: block;
 	margin-left: 20px;
 }
 .main-footer > ul > li > a{
