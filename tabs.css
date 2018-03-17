@@ -1,14 +1,47 @@
 * {font-family: 'Nunito', sans-serif;}
 
-
-.main-content{
-  justify-content: center;
-
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
 }
 
+.container {
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+/*@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}*/
+
+.main-content{
+  align-items: center;
+  justify-content: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+    border: 0;
+}
 
 /* Style the tab */
 .tab {
+
     text-align: center;
     overflow: hidden;
 }
@@ -40,22 +73,91 @@
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    margin: 0px 0% 0px 15%;
+    position: relative;
+    display: flex;
+    /*padding: 6px 12px;
+    margin-left: 15%;*/
+}
+
+.tabcontent h2 {
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 .retsepttekst{
+  position: relative;
+  display: block;
   float: left;
-  width: 30%;
+  min-width: 50%;
+  padding-right: 10px;
 }
 
-.retseptpilt{
-  width: auto;
+.retsepttekst h3 {
+  position: relative;
+  font-size: 26px;
+  margin-left: 30%;
+}
 
+.retsepttekst a{
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 100%;
+
+}
+
+.koostis {
+  list-style-type: circle;
+  position: relative;
+  font-size: 22px;
+  margin-left: 30%;
+  margin-top: 10%;
+
+}
+
+.nool {
+  position: relative;
+  display: flex;
+  margin-left: 30%;
+
+}
+/*@media (max-width: 1200px) {
+    .retsepttekst {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .retsepttekst {
+        max-width: 90%;
+        flex: 1 0 100%
+    }
+}*/
+
+.retseptpilt{
+  position: relative;
+
+  display: block;
+  /*flex: 1 1 100%;*/
 }
 
 .retseptpilt img{
-  width: auto;
+  padding:0;
+  margin:0;
+  max-width: 100%;
   height: auto;
 }
+
+/*@media (max-width: 1200px) {
+    .retseptpilt img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .retseptpilt img {
+        max-width: 100%;
+        flex: 1 0 100%
+    }
+}*/

@@ -1,12 +1,15 @@
+
+
 .main-header {
     height: 120px;
     width: auto;
-    margin-left: 16%;
-	margin-right: 16%;
+    /*margin-left: 16%;
+	margin-right: 16%;*/
 	display: flex;
 	position: relative;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 80px;
 }
 
 .main-header__logo {
@@ -43,14 +46,4 @@
  	font-size: 0px;
 	display: block;
  	text-decoration: none;
-}
-
-.fb {
-	background-repeat: no-repeat;
-	background-image: url("images/facebook_icon.png");
-}
-
-.insta {
-	background-repeat: no-repeat;
-	background-image: url("images/Instagram_icon.png");
 }

@@ -1,12 +1,12 @@
 
 .main-footer {
 	/*position: relative;*/
-	left:50%;
+	/*left:50%;*/
 	/*margin-left: -960px;
 	width: 1920px;*/
     height: 120px;
-    padding-left: 300px;
-	padding-right: 300px;
+    /*padding-left: 300px;
+	padding-right: 300px;*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -55,12 +55,3 @@
 
 }
 
-.fb {
-	background-repeat: no-repeat;
-	background-image: url("images/facebook-icon.png");
-}
-
-.insta {
-	background-repeat: no-repeat;
-	background-image: url("images/Instagram-icon.png");
-}

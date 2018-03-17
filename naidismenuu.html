@@ -26,145 +26,224 @@
 			</ul>
 		</header>
 		<main class="main-content">
+			<h1 class="sr-only">näidismeüüd</h1>
+			<div class="container">
+<!-- Firmaürituse list-->
+				<div class="tabcontent firma">
+					<h2>firmaüritus</h2>
 
-
-			<div class="tabcontent firma">
-				<h1>firmaüritus</h1>
-				<div class="retsepttekst">
-					<h3>Pealkiri 1</h3>
-					<ul class="koostis">
-						<li>pliinid creme fraiche ja graavilõhega</li>
-						<li>kurgirattad avokaado ja teriyaki krevetiga</li>
-						<li>peedi ja kitsejuustu mini quiches </li>
-						<li>mini eggs benedict</li>
-						<li>maguskartuli-feta salat</li>
-						<li>vahvli ja pannkoogi skewer</li>
-						<li>chia pudding</li>
-					</ul>
-					<a href="#">Saada päring</a>
+					<div class="retsepttekst">
+					<img class="kiired" src="images/kiired.png">
+						<h3>Pealkiri 1</h3>
+						<ul class="koostis">
+							<li>pliinid creme fraiche ja graavilõhega</li>
+							<li>kurgirattad avokaado ja teriyaki krevetiga</li>
+							<li>peedi ja kitsejuustu mini quiches </li>
+							<li>mini eggs benedict</li>
+							<li>maguskartuli-feta salat</li>
+							<li>vahvli ja pannkoogi skewer</li>
+							<li>chia pudding</li>
+						</ul>
+						<img class="nool" src="images/nool.png">
+						<a href="#">saada päring</a>
+					</div>
+					<div class="retseptpilt">
+						<img src="images/firma1.png" alt="firma1">
+					</div>
 				</div>
-				<div class="retseptpilt">
-					<img src="images/firma1.png" alt="firma1">
+
+				<div class="tabcontent firma">
+					<h2>firmaüritus</h2>
+					<div class="retsepttekst">
+						<h3>Pealkiri 2</h3>
+						<ul class="koostis">
+							<li>pliinid creme fraiche ja graavilõhega</li>
+							<li>kurgirattad avokaado ja teriyaki krevetiga</li>
+							<li>peedi ja kitsejuustu mini quiches </li>
+							<li>mini eggs benedict</li>
+							<li>maguskartuli-feta salat</li>
+							<li>vahvli ja pannkoogi skewer</li>
+							<li>chia pudding</li>
+						</ul>
+						<a href="#">Saada päring</a>
+					</div>
+					<div class="retseptpilt">
+						<img src="images/firma2.png" alt="firma2">
+					</div>
+				</div>
+
+				<div class="tabcontent firma">
+					<h2>firmaüritus</h2>
+					<div class="retsepttekst">
+						<h3>Pealkiri 3</h3>
+						<ul class="koostis">
+							<li>pliinid creme fraiche ja graavilõhega</li>
+							<li>kurgirattad avokaado ja teriyaki krevetiga</li>
+							<li>peedi ja kitsejuustu mini quiches </li>
+							<li>mini eggs benedict</li>
+							<li>maguskartuli-feta salat</li>
+							<li>vahvli ja pannkoogi skewer</li>
+							<li>chia pudding</li>
+						</ul>
+						<a href="#">Saada päring</a>
+					</div>
+					<div class="retseptpilt">
+						<img src="images/firma3.png" alt="firma3">
+					</div>
+				</div>
+
+				<div class="tab">
+					<button onclick="prevFirma(event, 'firma')"><</button>
+					<button class="tablinks firma" onclick="uusFirma(event, 0, 'firma')">1</button>
+					<button class="tablinks firma" onclick="uusFirma(event, 1, 'firma')">2</button>
+					<button class="tablinks firma" onclick="uusFirma(event, 2, 'firma')">3</button>
+					<button onclick="nextFirma(event, 'firma')">></button>
+				</div>
+			</div>
+<!-- Pulmade list-->
+			<div class="container">
+				<div class="tabcontent pulm">
+					<h2>pulmad</h2>
+					<div class="retsepttekst">
+						<h3>Pealkiri 1</h3>
+						<ul class="koostis">
+							<li>pliinid creme fraiche ja graavilõhega</li>
+							<li>kurgirattad avokaado ja teriyaki krevetiga</li>
+							<li>peedi ja kitsejuustu mini quiches </li>
+							<li>mini eggs benedict</li>
+							<li>maguskartuli-feta salat</li>
+							<li>vahvli ja pannkoogi skewer</li>
+							<li>chia pudding</li>
+						</ul>
+						<a href="#">Saada päring</a>
+					</div>
+					<div class="retseptpilt">
+						<img src="images/firma1.png" alt="pulm1">
+					</div>
+				</div>
+				<div class="tabcontent pulm">
+					<h2>pulmad</h2>
+					<div class="retsepttekst">
+						<h3>Pealkiri 2</h3>
+						<ul class="koostis">
+							<li>pliinid creme fraiche ja graavilõhega</li>
+							<li>kurgirattad avokaado ja teriyaki krevetiga</li>
+							<li>peedi ja kitsejuustu mini quiches </li>
+							<li>mini eggs benedict</li>
+							<li>maguskartuli-feta salat</li>
+							<li>vahvli ja pannkoogi skewer</li>
+							<li>chia pudding</li>
+						</ul>
+						<a href="#">Saada päring</a>
+					</div>
+					<div class="retseptpilt">
+						<img src="images/pulm2.png" alt="pulm2">
+					</div>
+				</div>
+
+				<div class="tabcontent pulm">
+					<h2>pulmad</h2>
+					<div class="retsepttekst">
+						<h3>Pealkiri 3</h3>
+						<ul class="koostis">
+							<li>pliinid creme fraiche ja graavilõhega</li>
+							<li>kurgirattad avokaado ja teriyaki krevetiga</li>
+							<li>peedi ja kitsejuustu mini quiches </li>
+							<li>mini eggs benedict</li>
+							<li>maguskartuli-feta salat</li>
+							<li>vahvli ja pannkoogi skewer</li>
+							<li>chia pudding</li>
+						</ul>
+						<a href="#">Saada päring</a>
+					</div>
+					<div class="retseptpilt">
+						<img src="images/pulm3.png" alt="pulm3">
+					</div>
+				</div>
+
+				<div class="tab">
+					<button onclick="prevFirma(event, 'pulm')"><</button>
+					<button class="tablinks pulm" onclick="uusFirma(event, 0, 'pulm')">1</button>
+					<button class="tablinks pulm" onclick="uusFirma(event, 1, 'pulm')">2</button>
+					<button class="tablinks pulm" onclick="uusFirma(event, 2, 'pulm')">3</button>
+					<button onclick="nextFirma(event, 'pulm')">></button>
 				</div>
 			</div>
 
-			<div class="tabcontent firma">
-				<h1>firmaüritus</h1>
-				<div class="retsepttekst">
-					<h3>Pealkiri 2</h3>
-					<ul class="koostis">
-						<li>pliinid creme fraiche ja graavilõhega</li>
-						<li>kurgirattad avokaado ja teriyaki krevetiga</li>
-						<li>peedi ja kitsejuustu mini quiches </li>
-						<li>mini eggs benedict</li>
-						<li>maguskartuli-feta salat</li>
-						<li>vahvli ja pannkoogi skewer</li>
-						<li>chia pudding</li>
-					</ul>
-					<a href="#">Saada päring</a>
+<!-- Sünnipäeva list-->
+
+			<div class="container">
+				<div class="tabcontent synna">
+					<h2>sünnipäev</h2>
+					<div class="retsepttekst">
+					    <h3>Pealkiri 1</h3>
+					    <ul class="koostis">
+					    	<li>pliinid creme fraiche ja graavilõhega</li>
+					    	<li>kurgirattad avokaado ja teriyaki krevetiga</li>
+					    	<li>peedi ja kitsejuustu mini quiches </li>
+					    	<li>mini eggs benedict</li>
+					    	<li>maguskartuli-feta salat</li>
+					    	<li>vahvli ja pannkoogi skewer</li>
+					    	<li>chia pudding</li>
+					    </ul>
+					    <a href="#">Saada päring</a>
+					</div>
+					<div class="retseptpilt">
+				    	<img src="images/synna1.png" alt="synna1">
+				  	</div>
 				</div>
-				<div class="retseptpilt">
-					<img src="images/firma2.png" alt="firma1">
+
+				<div class="tabcontent synna">
+					<h2>sünnipäev</h2>
+				  	<div class="retsepttekst">
+				    	<h3>Pealkiri 2</h3>
+				    	<ul class="koostis">
+					      	<li>pliinid creme fraiche ja graavilõhega</li>
+					      	<li>kurgirattad avokaado ja teriyaki krevetiga</li>
+					     	<li>peedi ja kitsejuustu mini quiches </li>
+					      	<li>mini eggs benedict</li>
+					      	<li>maguskartuli-feta salat</li>
+					      	<li>vahvli ja pannkoogi skewer</li>
+					      	<li>chia pudding</li>
+				    	</ul>
+				    	<a href="#">Saada päring</a>
+				  	</div>
+				  	<div class="retseptpilt">
+				    	<img src="images/synna2.png" alt="synna2">
+				  	</div>
+				</div>
+
+				<div class="tabcontent synna">
+					<h2>sünnipäev</h2>
+				  	<div class="retsepttekst">
+					    <h3>Pealkiri 3</h3>
+					    <ul class="koostis">
+					      	<li>pliinid creme fraiche ja graavilõhega</li>
+					      	<li>kurgirattad avokaado ja teriyaki krevetiga</li>
+					      	<li>peedi ja kitsejuustu mini quiches </li>
+					      	<li>mini eggs benedict</li>
+					      	<li>maguskartuli-feta salat</li>
+					      	<li>vahvli ja pannkoogi skewer</li>
+					      	<li>chia pudding</li>
+					    </ul>
+					    <a href="#">Saada päring</a>
+				  	</div>
+				  	<div class="retseptpilt">
+				    	<img src="images/synna3.png" alt="synna3">
+				  	</div>
+				</div>
+
+				<div id="synna" class="tab">
+				  	<button onclick="prevFirma(event, 'synna')"><</button>
+				  	<button class="tablinks synna" onclick="uusFirma(event, 0, 'synna')">1</button>
+				  	<button class="tablinks synna" onclick="uusFirma(event, 1, 'synna')">2</button>
+				  	<button class="tablinks synna" onclick="uusFirma(event, 2, 'synna')">3</button>
+				  	<button onclick="nextFirma(event, 'synna')">></button>
 				</div>
 			</div>
-
-			<div class="tabcontent firma">
-				<h1>firmaüritus</h1>
-				<div class="retsepttekst">
-					<h3>Pealkiri 3</h3>
-					<ul class="koostis">
-						<li>pliinid creme fraiche ja graavilõhega</li>
-						<li>kurgirattad avokaado ja teriyaki krevetiga</li>
-						<li>peedi ja kitsejuustu mini quiches </li>
-						<li>mini eggs benedict</li>
-						<li>maguskartuli-feta salat</li>
-						<li>vahvli ja pannkoogi skewer</li>
-						<li>chia pudding</li>
-					</ul>
-					<a href="#">Saada päring</a>
-				</div>
-				<div class="retseptpilt">
-					<img src="images/firma3.png" alt="firma1">
-				</div>
 			</div>
 
-			<div class="tab">
-				<button onclick="prevFirma(event, 'firma')"><</button>
-				<button class="tablinks firma" onclick="uusFirma(event, 0, 'firma')">1</button>
-				<button class="tablinks firma" onclick="uusFirma(event, 1, 'firma')">2</button>
-				<button class="tablinks firma" onclick="uusFirma(event, 2, 'firma')">3</button>
-				<button onclick="nextFirma(event, 'firma')">></button>
-			</div>
-
-
-			<div class="tabcontent synna">
-				<h1>sünnipäev</h1>
-				<div class="retsepttekst">
-				    <h3>Pealkiri 1</h3>
-				    <ul class="koostis">
-				    	<li>pliinid creme fraiche ja graavilõhega</li>
-				    	<li>kurgirattad avokaado ja teriyaki krevetiga</li>
-				    	<li>peedi ja kitsejuustu mini quiches </li>
-				    	<li>mini eggs benedict</li>
-				    	<li>maguskartuli-feta salat</li>
-				    	<li>vahvli ja pannkoogi skewer</li>
-				    	<li>chia pudding</li>
-				    </ul>
-				    <a href="#">Saada päring</a>
-				</div>
-				<div class="retseptpilt">
-			    	<img src="images/synna1.png" alt="synna1">
-			  	</div>
-			</div>
-
-			<div class="tabcontent synna">
-				<h1>sünnipäev</h1>
-			  	<div class="retsepttekst">
-			    	<h3>Pealkiri 2</h3>
-			    	<ul class="koostis">
-				      	<li>pliinid creme fraiche ja graavilõhega</li>
-				      	<li>kurgirattad avokaado ja teriyaki krevetiga</li>
-				     	<li>peedi ja kitsejuustu mini quiches </li>
-				      	<li>mini eggs benedict</li>
-				      	<li>maguskartuli-feta salat</li>
-				      	<li>vahvli ja pannkoogi skewer</li>
-				      	<li>chia pudding</li>
-			    	</ul>
-			    	<a href="#">Saada päring</a>
-			  	</div>
-			  	<div class="retseptpilt">
-			    	<img src="images/synna2.png" alt="synna2">
-			  	</div>
-			</div>
-
-			<div class="tabcontent synna">
-				<h1>sünnipäev</h1>
-			  	<div class="retsepttekst">
-				    <h3>Pealkiri 3</h3>
-				    <ul class="koostis">
-				      	<li>pliinid creme fraiche ja graavilõhega</li>
-				      	<li>kurgirattad avokaado ja teriyaki krevetiga</li>
-				      	<li>peedi ja kitsejuustu mini quiches </li>
-				      	<li>mini eggs benedict</li>
-				      	<li>maguskartuli-feta salat</li>
-				      	<li>vahvli ja pannkoogi skewer</li>
-				      	<li>chia pudding</li>
-				    </ul>
-				    <a href="#">Saada päring</a>
-			  	</div>
-			  	<div class="retseptpilt">
-			    	<img src="images/synna3.png" alt="synna3">
-			  	</div>
-			</div>
-
-			<div id="synna" class="tab">
-			  	<button onclick="prevFirma(event, 'synna')"><</button>
-			  	<button class="tablinks synna" onclick="uusFirma(event, 0, 'synna')">1</button>
-			  	<button class="tablinks synna" onclick="uusFirma(event, 1, 'synna')">2</button>
-			  	<button class="tablinks synna" onclick="uusFirma(event, 2, 'synna')">3</button>
-			  	<button onclick="nextFirma(event, 'synna')">></button>
-			</div>
-
+<!-- Kodukoka list-->
 
 		</main>
 		<footer class="main-footer">
