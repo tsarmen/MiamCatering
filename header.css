@@ -1,8 +1,8 @@
 .main-header {
     height: 120px;
     width: auto;
-    margin-left: 300px;
-	margin-right: 300px;
+    margin-left: 16%;
+	margin-right: 16%;
 	display: flex;
 	position: relative;
 	align-items: center;
@@ -21,7 +21,6 @@
 }
 
 .main__nav > a {
-	/*text-align: center;*/
 	display: relative;
 	padding-left: 20px;
 	padding-right: 20px;
