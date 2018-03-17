@@ -1,0 +1,57 @@
+.main-header {
+    height: 120px;
+    width: auto;
+    margin-left: 300px;
+	margin-right: 300px;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-header__logo {
+	position: relative;
+}
+
+.main__nav {
+	position: absolute;
+	right: 90px;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.main__nav > a {
+	/*text-align: center;*/
+	display: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+}
+
+.main-header > ul {
+	padding:0;
+	margin:0;
+	display: flex;
+	list-style-type: none;
+}
+.main-header > ul > li {
+	margin-left: 20px;
+	display: block;
+}
+.main-header > ul > li > a{
+	width: 24px;
+	height: 24px;
+ 	font-size: 0px;
+	display: block;
+ 	text-decoration: none;
+}
+
+.fb {
+	background-repeat: no-repeat;
+	background-image: url("images/facebook_icon.png");
+}
+
+.insta {
+	background-repeat: no-repeat;
+	background-image: url("images/Instagram_icon.png");
+}

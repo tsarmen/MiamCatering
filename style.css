@@ -3,17 +3,17 @@
 *::after {
 	box-sizing: border-box;
 }
-/*
-font-family: 'Nunito', sans-serif;
-*/
+
+* {font-family: 'Nunito', sans-serif;}
+
 
 body {
 	font-size: 20px;
 	line-height: 1.47em;
-	font-family: 'Nunito', sans-serif;
+	/*font-family: 'Nunito', sans-serif;*/
 }
 h1, h2, h3, h4 {
-	font-family: 'Nunito', sans-serif;
+	/*font-family: 'Nunito', sans-serif;*/
 	color: #343333;
 }
 h1 {
@@ -51,13 +51,15 @@ a:hover {
 }
 
 .main-header__logo {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	background-image: url("images/LOGO1.png");
+	margin-top: 105px;
+	margin-bottom: 110px;
+	margin-right: 364px;
+	margin-left: 364px;
+	/*background-image: url("images/LOGO1.png");
 	background-repeat: no-repeat;
 	width: 1000px;
 	height: 500px;
-	background-position: center;
+	background-position: center;*/
 
 }
 
