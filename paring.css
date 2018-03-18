@@ -1,8 +1,38 @@
+.background {
+	background: url("images/paring-taust.png") no-repeat;
+    background-size: cover;
+    /*position: absolute left top;
+    display: flex;*/
+    /*overflow: visible;*/
+	/*-moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    /*background-repeat: no-repeat;
+    background-size: 50%;*/
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+    border: 0;
+}
+
 .wrapper {
     max-width: 1400px;
     margin: auto;
-    background: url("images/paring_taust.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
+
 }
 
+.paring {
+	display: block;
+	margin: auto;
+
+
+}

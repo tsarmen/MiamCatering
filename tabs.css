@@ -6,6 +6,7 @@
 }
 
 .container {
+  
     margin: auto;
     margin-bottom: 5%;
 }
@@ -41,7 +42,6 @@
 
 /* Style the tab */
 .tab {
-
     text-align: center;
     overflow: hidden;
 }
