@@ -1,0 +1,8 @@
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+    background: url("images/paring_taust.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+

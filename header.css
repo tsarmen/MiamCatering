@@ -1,8 +1,11 @@
 
 
+* {font-family: 'Nunito', sans-serif;}
+
 .main-header {
     height: 120px;
     width: auto;
+    font-size: 16px;
     /*margin-left: 16%;
 	margin-right: 16%;*/
 	display: flex;
