@@ -1,16 +1,14 @@
 
 
 * {font-family: 'Nunito', sans-serif;}
-
+body {
+		background-image: url(images/header.png);
+		z-index: 1;
+}
 .main-header {
-	background-image: url(images/header.png);
-	/*background-repeat: no-repeat;
-	overflow: visible;*/
     height: 120px;
     width: auto;
     font-size: 16px;
-    /*margin-left: 16%;
-	margin-right: 16%;*/
 	display: flex;
 	position: relative;
 	align-items: center;

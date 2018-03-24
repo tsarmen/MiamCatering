@@ -1,19 +1,15 @@
 :root {
     font-size: calc(14px + 4 * ((100vw - 320px)/2240))
 }
+body {
+    background: url("images/paring-taust.png") no-repeat;
 
-.background {
-	background: url("images/paring-taust.png") no-repeat;
     background-size: cover;
-    /*position: absolute left top;
-    display: flex;*/
-    /*overflow: visible;*/
-	/*-moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
-    /*background-repeat: no-repeat;
-    background-size: 50%;*/
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
 }
 
 .sr-only {
@@ -28,10 +24,6 @@
     border: 0;
 }
 
-.wrapper {
-    max-width: 1400px;
-    margin: auto;
-}
 .main-content{
     margin:auto;
     width: 40%;
@@ -97,6 +89,7 @@ input[type=checkbox]:checked:after {
 }
 
 .form-group {
+    position: relative;
     color: #343333;
     font-size: 0.8rem;
     margin: 10px;
@@ -107,7 +100,6 @@ input[type=checkbox]:checked:after {
     display: block;
     width: 100%;
     height:30px;
-
 }
 
 .form-control-short {
@@ -128,4 +120,14 @@ select {
    padding: 5px 10px;
    text-overflow: ellipsis;
    white-space: nowrap;
+}
+
+.btn_send {
+  cursor: pointer;
+  display:flex;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  margin: auto;
 }

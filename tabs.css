@@ -1,5 +1,9 @@
 * {font-family: 'Nunito', sans-serif;}
 
+:root {
+    font-size: calc(14px + 4 * ((100vw - 320px)/2240))
+}
+
 .wrapper {
     max-width: 1400px;
     margin: auto;
@@ -85,6 +89,7 @@
   margin-bottom: 5%;
 }
 
+/*.tabcontent*/
 .retsepttekst{
   position: relative;
   display: block;
@@ -98,23 +103,45 @@
   font-size: 26px;
   margin-left: 30%;
 }
-
-.retsepttekst a{
+/*
+.retsepttekst a {
   position: relative;
   font-size: 24px;
   font-weight: bold;
   margin-left: 10%;
   margin-top: 100%;
 
+}*/
+
+.btn_send {
+  cursor: pointer;
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  border: none;
+  z-index: 1;
 }
 
 .koostis {
-  list-style-type: circle;
   position: relative;
   font-size: 22px;
   margin-left: 30%;
   margin-top: 10%;
+}
 
+.koostis > li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.koostis > li:before {
+    content:"·";
+    font-size:30px;
+    vertical-align:top;
+    line-height: 30px;
+    margin-right: 5px;
 }
 
 .nool {
