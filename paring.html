@@ -25,18 +25,27 @@
 		<h1 class="sr-only">päring</h1>
 
 		<form class="paring" method="POST" >
-			näidismenüü:<br> <input list="menu" class="resizedBox" name="menuu"><br>
-				<datalist id="menu">
-				  <option value="Internet Explorer">
-				  <option value="Firefox">
-				  <option value="Chrome">
-				  <option value="Opera">
-				  <option value="Safari">
-				 </datalist>
-			kuupäev:<br> <input class="shortBox" type="date" name="kuupaev"><br>
-			inimeste arv:<br> <input class="shortBox" type="number" name="inimesed"><br>
-			eelarve:<br> <input class="shortBox" type="number" name="eelarve"><br>
-			erisoovid: <br>
+			<div class="form-group">
+				<label>näidismenüü</label>
+				<select class="form-control">
+					<option>firma 1</option>
+					<option>firma 2</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>kuupäev</label>
+				<input class="form-control-short" type="date">
+			</div>
+			<div class="form-group">
+				<label>inimeste arv</label>
+				<input class="form-control-short" type="number">
+			</div>
+			<div class="form-group">
+				<label>eelarve</label>
+				<input class="form-control-short" type="number">
+			</div>
+			<div class="form-group">
+				<label>erisoovid</label>
 				<div class="checklist">
 					<label class="erisoov"><input type="checkbox" name="erisoov" value="vegan">vegan</label>
 					
@@ -48,10 +57,23 @@
 					
 					<label class="erisoov"><input type="checkbox" name="erisoov" value="vegan">pähklivaba</label>
 				</div>
-		  	asukoht:<br> <input class="resizedBox" type="text" name="asukoht"><br>
-		  	nimi:<br> <input class="resizedBox" type="text" name="nimi"><br>
-		  	e-post:<br> <input class="resizedBox" type="email" name="email"><br>
-		  	lisainfo:<br> <input class="resizedBox" type="text" name="info"><br>
+			</div>
+			<div class="form-group">
+				<label>asukoht</label>
+				<input class="form-control" type="text">
+			</div>
+			<div class="form-group">
+				<label>nimi</label>
+				<input class="form-control" type="text">
+			</div>
+			<div class="form-group">
+				<label>e-mail</label>
+				<input class="form-control" type="email">
+			</div>
+			<div class="form-group">
+				<label>lisainfo</label>
+				<input class="form-control" type="text">
+			</div>
 		  	<input type="submit" value="Saada päring">
 		</form>
 		</main>
