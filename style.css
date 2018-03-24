@@ -39,6 +39,7 @@ a:hover {
     margin: auto;
     overflow: visible;
 }*/
+
 @media (max-width: 768px) {
     .main-header__logo img {
     	width: 100%;

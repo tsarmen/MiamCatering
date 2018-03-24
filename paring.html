@@ -24,17 +24,30 @@
 		<main class="main-content">
 		<h1 class="sr-only">päring</h1>
 
-		<form id="paring" method="POST" >
-			näidismenüü:<br> <input type="datalist_tabs" name="menuu"><br>
-			kuupäev:<br> <input type="date" name="kuupaev"><br>
+		<form class="paring" method="POST" >
+			näidismenüü:<br> <input list="menu" class="resizedBox" name="menuu"><br>
+				<datalist id="menu">
+				  <option value="Internet Explorer">
+				  <option value="Firefox">
+				  <option value="Chrome">
+				  <option value="Opera">
+				  <option value="Safari">
+				 </datalist>
+			kuupäev:<br> <input class="resizedBox" type="date" name="kuupaev"><br>
 			inimeste arv:<br> <input type="number" name="inimesed"><br>
 			eelarve:<br> <input type="number" name="eelarve"><br>
 			erisoovid: <br>
-				<input type="checkbox" name="special" value="vegan">vegan<br>
-				<input type="checkbox" name="special" value="gluteen">gluteenivaba<br>
-				<input type="checkbox" name="special" value="laktoos">laktoosivaba<br>
-				<input type="checkbox" name="special" value="muavaba">munavaba<br>
-				<input type="checkbox" name="special" value="vegan">pähklivaba<br>
+				<div class="checklist">
+					<label class="erisoov"><input type="checkbox" name="erisoov" value="vegan">vegan</label>
+					
+					<label class="erisoov"><input type="checkbox" name="erisoov" value="gluteen">gluteenivaba</label>
+					
+					<label class="erisoov"><input type="checkbox" name="erisoov" value="laktoos">laktoosivaba</label>
+					
+					<label class="erisoov"><input type="checkbox" name="erisoov"" value="munavaba">munavaba</label>
+					
+					<label class="erisoov"><input type="checkbox" name="erisoov" value="vegan">pähklivaba</label>
+				</div>
 		  	asukoht:<br> <input type="text" name="asukoht"><br>
 		  	nimi:<br> <input type="text" name="nimi"><br>
 		  	e-post:<br> <input type="email" name="email"><br>

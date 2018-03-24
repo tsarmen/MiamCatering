@@ -1,3 +1,7 @@
+:root {
+    font-size: calc(14px + 4 * ((100vw - 320px)/2240))
+}
+
 .background {
 	background: url("images/paring-taust.png") no-repeat;
     background-size: cover;
@@ -27,12 +31,63 @@
 .wrapper {
     max-width: 1400px;
     margin: auto;
-
 }
+.main-content{
+    margin:auto;
+    width: 40%;
+} 
 
 .paring {
+    justify-content: center;
 	display: block;
-	margin: auto;
+	margin-left: auto;
+}
 
 
+.checklist {
+    height: auto;
+    padding: auto;
+    height: 20%;
+}
+
+.erisoov {
+    width: 250px;
+    height: 20%;
+    vertical-align: middle;
+    cursor:pointer;
+}
+
+input[type=checkbox] {
+    margin-right: 1.5rem;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type=checkbox]:before {
+     content: "";
+     display: block;
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     top: 0;
+     left: 0;
+     border: 2px solid #8E8E8E;
+     border-radius: 2px;
+     background-color: white;
+}
+
+input[type=checkbox]:checked:after {
+     content: "";
+     display: block;
+     width: 5px;
+     height: 10px;
+     border: solid black;
+     border-width: 0 2px 2px 0;
+     -webkit-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     transform: rotate(45deg);
+     position: absolute;
+     top: 2px;
+     left: 6px;
 }
