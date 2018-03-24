@@ -99,7 +99,7 @@ function setActiveTab(tyyp, activeTab){
   if(tyyp == "firma"){
     arrayOfActiveTabs[0]=activeTab;
   }else if (tyyp == "pulm") {
-    arrayOfActiveTabs[2]=activeTab;
+    arrayOfActiveTabs[1]=activeTab;
   }else if (tyyp == "synna") {
     arrayOfActiveTabs[2]=activeTab;
   }else if(tyyp == "kodukokk"){
