@@ -45,16 +45,20 @@
 
 
 .checklist {
+    display: flex;
+    flex-wrap: wrap;
     height: auto;
     padding: auto;
     height: 20%;
 }
 
 .erisoov {
-    width: 250px;
-    height: 20%;
+    flex: 1 0 33.3333%;
+    max-width: 33.3333%;
     vertical-align: middle;
+    white-space: nowrap;
     cursor:pointer;
+    margin-bottom: 15px;
 }
 
 input[type=checkbox] {
@@ -90,4 +94,14 @@ input[type=checkbox]:checked:after {
      position: absolute;
      top: 2px;
      left: 6px;
+}
+
+.resizedBox {
+    width: 100%;
+    height:30px;
+}
+
+.shortBox {
+    width: 50%;
+    height:30px;
 }
