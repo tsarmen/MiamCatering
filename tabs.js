@@ -106,3 +106,26 @@ function setActiveTab(tyyp, activeTab){
     arrayOfActiveTabs[3]=activeTab;
   }
 }
+
+
+function getAndRedirect(tyyp, nr) {
+  console.log("sees");
+  var form = document.createElement("form");
+  var element1 = document.createElement("input");
+  var element2 = document.createElement("input");
+
+  form.method = "GET";
+  form.action = "paring.html";
+
+  element1.value=tyyp;
+  element1.name="tyyp";
+  form.appendChild(element1);
+
+  element2.value=nr;
+  element2.name="nr";
+  form.appendChild(element2);
+
+  document.body.appendChild(form);
+
+  form.submit();
+}
