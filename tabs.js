@@ -109,7 +109,6 @@ function setActiveTab(tyyp, activeTab){
 
 
 function getAndRedirect(tyyp, nr) {
-  console.log("sees");
   var form = document.createElement("form");
   var element1 = document.createElement("input");
   var element2 = document.createElement("input");
